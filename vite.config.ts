@@ -1,0 +1,21 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import path from 'path'
+
+// https://vite.dev/config/
+export default defineConfig({
+    plugins: [react()],
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, './src'),
+            '@components': path.resolve(__dirname, './src/components'),
+            '@core': path.resolve(__dirname, './src/core'),
+            '@data': path.resolve(__dirname, './src/data'),
+            '@features': path.resolve(__dirname, './src/features'),
+            '@helpers': path.resolve(__dirname, './src/helpers'),
+            '@layouts': path.resolve(__dirname, './src/layouts'),
+            '@types': path.resolve(__dirname, './src/types'),
+            '@tests': path.resolve(__dirname, './src/__tests__'),
+        },
+    },
+})
