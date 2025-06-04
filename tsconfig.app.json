@@ -29,7 +29,7 @@
             "@components/*": ["src/components/*"],
             "@core/*": ["src/core/*"],
             "@data/*": ["src/data/*"],
-            "@features/*": ["src/features/*"],
+            "@features/*": ["src/components/features/*"],
             "@helpers/*": ["src/helpers/*"],
             "@layouts/*": ["src/layouts/*"],
             "@types/*": ["src/types/*"],

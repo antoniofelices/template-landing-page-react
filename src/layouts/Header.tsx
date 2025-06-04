@@ -1,6 +1,6 @@
-import Logo from '@components/Logo'
-import Menu from '@components/Menu'
-import Button from '@components/Button'
+import Logo from '@components/basic/Logo'
+import Menu from '@components/basic/Menu'
+import Button from '@components/basic/Button'
 import mainMenuData from '@data/mainMenuData'
 
 const Header = () => {
