@@ -4,7 +4,7 @@ import Features from '@/components/features/Features'
 import Downloads from '@/components/features/Downloads'
 import FAQs from '@/components/features/FAQs'
 
-function IndexPage() {
+function Home() {
     return (
         <>
             <DefaultLayout>
@@ -17,4 +17,4 @@ function IndexPage() {
     )
 }
 
-export default IndexPage
+export default Home

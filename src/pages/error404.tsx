@@ -1,11 +1,11 @@
 import DefaultLayout from '@layouts/DefaultLayout'
 
-function error404Page() {
+function Error404() {
     return (
         <>
-            <DefaultLayout></DefaultLayout>
+            <DefaultLayout>Error</DefaultLayout>
         </>
     )
 }
 
-export default error404Page
+export default Error404
