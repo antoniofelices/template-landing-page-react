@@ -1,9 +1,9 @@
-import DefaultLayout from '@layouts/DefaultLayout'
+import LandingLayout from '@layouts/LandingLayout'
 
 function Error404() {
     return (
         <>
-            <DefaultLayout>Error</DefaultLayout>
+            <LandingLayout>Error</LandingLayout>
         </>
     )
 }
