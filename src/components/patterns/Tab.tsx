@@ -1,4 +1,4 @@
-import Button from '@components/Button'
+import Button from '@components/base/Button'
 
 const Tab = () => {
     return (
@@ -8,7 +8,7 @@ const Tab = () => {
             title
             paragraph
             */}
-            <Button />
+            <Button text={''} />
         </div>
     )
 }
