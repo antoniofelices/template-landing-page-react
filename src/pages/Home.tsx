@@ -1,10 +1,10 @@
 import DefaultLayout from '@layouts/DefaultLayout'
-import Hero from '@features/Hero'
-import Features from '@features/Features'
-import Downloads from '@features/Downloads'
-import FAQs from '@features/FAQs'
+import Hero from '@/components/features/Hero'
+import Features from '@/components/features/Features'
+import Downloads from '@/components/features/Downloads'
+import FAQs from '@/components/features/FAQs'
 
-function App() {
+function Home() {
     return (
         <>
             <DefaultLayout>
@@ -17,4 +17,4 @@ function App() {
     )
 }
 
-export default App
+export default Home
