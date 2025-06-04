@@ -1,19 +1,15 @@
-# Sprint 4 IT Academy | API Jokes and Weather
+# Sprint 5 IT Academy | Template Landing Page React
 
 ## Description
 
-Exercise to practise consuming API data. Tree APIs: two from Jokes and one weather API. Manipulate the DOM, learn TypeScript and understand how it works with Vite and TypeScript.
+Refact sprint 1 Template Landing Page using React.
 
-<img src="src/assets/images/preview-01.webp" alt="Preview" width="200"/>
+<img src="#" alt="Preview" width="200"/>
 
 ### Some decisions
 
 -   Use Vite and Vitest as development tools.
--   First, focus on writing code in JavaScript, then follow up by refactoring it in TypeScript.
-
-### API key from
-
-To see the weather forecast, you need an API key from [Weather API](https://www.weatherapi.com/)
+-   Start using TypeScript from the beginning..
 
 ## Technologies
 
@@ -21,6 +17,7 @@ To see the weather forecast, you need an API key from [Weather API](https://www.
 -   Typescript.
 -   Vite.
 -   Vitest.
+-   Taildwind.
 
 ## Requirements
 
@@ -34,7 +31,7 @@ To see the weather forecast, you need an API key from [Weather API](https://www.
 1. Clone this repo
 
 ```bash
-$ git clone https://github.com/antoniofelices/jokes-and-weather .
+$ git clone https://github.com/antoniofelices/template-landing-page-react .
 ```
 
 2. Install packages
@@ -49,45 +46,10 @@ $ npm install
 $ npm run dev
 ```
 
-#### Installation JavaScript
-
-To see the project just in JavaScript (if You have run dev, stop it).
-
-1. Fetch tags
-
-```bash
-$ git fetch --all --tag
-```
-
-2. Display tags
-
-```bash
-$ git tag
-```
-
-3. Checkout tag
-
-```bash
-$ git checkout tags/v0.1
-```
-
-4. Install packages
-
-```bash
-$ npm install
-```
-
-5. Run develop
-
-```bash
-$ npm run dev
-```
-
 ## Future Improvements
 
 -   Move the errors to a separate log file.
 -   Save local data on `localStore` and `sessionStore`
--   Improve the styles and background image transitions.
 
 ## Contributing
 
