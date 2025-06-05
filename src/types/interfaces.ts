@@ -1,17 +1,19 @@
-export type MainMenuData = {
-    id: number
-    text: string
-    url: string
-}
 export type ButtonProps = {
     text: string
     url?: string
     classes?: string
     buttonType?: 'button' | 'submit' | 'reset'
 }
-export type DetailsProps = {
+export type DetailProps = {
+    id: number
     summary: string
     text: string
+}
+export type DetailsSectionProps = {
+    title: string
+    textIntro: string
+    details: DetailProps[]
+    textButton: string
 }
 export type CardProps = {
     id: number
@@ -24,6 +26,7 @@ export type CardsSectionProps = {
     textIntro: string
     cards: CardProps[]
 }
+
 export type HeroSectionProps = {
     title: string
     textIntro: string
@@ -31,6 +34,11 @@ export type HeroSectionProps = {
     altimage: string
     textButton1: string
     textButton2: string
+}
+export type MainMenuData = {
+    id: number
+    text: string
+    url: string
 }
 export type TabProps = {
     id: number
