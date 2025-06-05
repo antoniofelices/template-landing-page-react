@@ -1,10 +1,12 @@
 import type { ButtonProps } from '@/types/interfaces'
 import { Link } from 'react-router'
 
-const Button = ({ text, url }: ButtonProps) => {
+const Button = ({ classes, text, url, buttonType }: ButtonProps) => {
     return (
         <>
-            <button>{url ? <Link to={url}>{text}</Link> : <>{text}</>}</button>
+            <button className={classes}>
+                {url ? <Link to={url}>{text}</Link> : <>{text}</>}
+            </button>
         </>
     )
 }

@@ -2,7 +2,7 @@ import type { MainMenuData } from '@/types/interfaces'
 
 const mainMenuData: MainMenuData[] = [
     {
-        url: '',
+        url: '#',
         text: 'Features',
     },
     {

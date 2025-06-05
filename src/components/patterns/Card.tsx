@@ -14,7 +14,11 @@ const Card = ({ image, title, text }: CardProps) => {
                 {title}
             </h3>
             <p className="text-sm">{text}</p>
-            <Button text={'#'} />
+            <Button
+                buttonType={`button`}
+                text={'#'}
+                classes={`rounded-lg border-2 border-blue bg-blue px-3 py-2 text-sm font-bold text-white hover:border-blue hover:bg-transparent hover:text-blue`}
+            />
         </div>
     )
 }

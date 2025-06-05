@@ -1,6 +1,4 @@
-import type { HeroSectionProps } from '@/types/interfaces'
-
-const heroHomeData: HeroSectionProps = {
+const heroAboutData = {
     title: ' A Simple Bookmark Manager',
     textIntro:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus arcu, commodo sit amet mollis quis, euismod nec metus. Praesent sed scelerisque tellus. Integer auctor suscipit purus.',
@@ -10,4 +8,4 @@ const heroHomeData: HeroSectionProps = {
     textButton2: 'Get It On Firefox',
 }
 
-export default heroHomeData
+export default heroAboutData

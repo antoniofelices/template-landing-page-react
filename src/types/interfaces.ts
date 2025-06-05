@@ -5,6 +5,8 @@ export type MainMenuData = {
 export type ButtonProps = {
     text: string
     url?: string
+    classes?: string
+    buttonType?: string
 }
 export type DetailsProps = {
     summary: string
@@ -35,6 +37,18 @@ export type HeroSectionProps = {
     altimage: string
     textButton1: string
     textButton2: string
+}
+export type TabProps = {
+    tabTitle: string
+    title: string
+    text: string
+    buttonText: string
+    image: string
+}
+export type TabsSectionProps = {
+    title: string
+    textIntro: string
+    tabs: TabProps[]
 }
 export type ReactElementProps = {
     children: React.ReactNode

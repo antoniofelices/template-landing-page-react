@@ -1,4 +1,6 @@
-const donwloadsHomeData = {
+import type { CardsSectionProps } from '@/types/interfaces'
+
+const donwloadsHomeData: CardsSectionProps = {
     title: 'Download the extension',
     textIntro:
         "We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.",
