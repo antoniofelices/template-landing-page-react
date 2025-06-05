@@ -1,11 +1,14 @@
 import Tab from '@components/patterns/Tab'
 import type { TabsSectionProps } from '@/types/interfaces'
+import { transformToId } from '@helpers/utils'
 
 const Tabs = ({ content }: { content: TabsSectionProps }) => {
     const contentTabs = content.tabs
+    const idSection = transformToId(content.title)
+
     return (
         <section
-            id="features"
+            id={idSection}
             className="@container/features relative py-11 after:absolute after:bottom-[25%] after:left-0 after:-z-1 after:block after:h-[240px] after:w-[300px] after:rounded-br-[50%] after:bg-blue after:content-[''] lg:after:bottom-0 lg:after:h-[40%] lg:after:w-[40%]"
         >
             <div className="container max-w-5xl">

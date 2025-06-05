@@ -2,11 +2,13 @@ import DefaultLayout from '@layouts/DefaultLayout'
 import Hero from '@components/sections/Hero'
 import Tabs from '@components/sections/Tabs'
 import Cards from '@components/sections/Cards'
-import FAQs from '@components/sections/FAQs'
+import Details from '@/components/sections/Details'
+import Aside from '@/components/sections/Aside'
 import heroHomeData from '@data/home/hero'
 import featuresHomeData from '@data/home/features'
 import donwloadsHomeData from '@data/home/donwloads'
 import faqsHomeData from '@data/home/faqs'
+import asideHomeData from '@data/home/aside'
 
 const Home = () => {
     return (
@@ -14,7 +16,8 @@ const Home = () => {
             <Hero content={heroHomeData} />
             <Tabs content={featuresHomeData} />
             <Cards content={donwloadsHomeData} />
-            <FAQs content={faqsHomeData} />
+            <Details content={faqsHomeData} />
+            <Aside content={asideHomeData} />
         </DefaultLayout>
     )
 }

@@ -26,7 +26,17 @@ export type CardsSectionProps = {
     textIntro: string
     cards: CardProps[]
 }
-
+export type AsideSectionProps = {
+    text1: string
+    text2: string
+    form?: FormSuscribeProps
+    button?: ButtonProps
+}
+export type FormSuscribeProps = {
+    textLabel: string
+    textError: string
+    textButton: string
+}
 export type HeroSectionProps = {
     title: string
     textIntro: string

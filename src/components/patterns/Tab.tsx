@@ -1,8 +1,9 @@
 import Button from '@components/base/Button'
 import type { TabProps } from '@/types/interfaces'
+import { transformToId } from '@helpers/utils'
 
 const Tab = ({ contentTab }: { contentTab: TabProps }) => {
-    const tabTitleId = contentTab.tabTitle.replace(' ', '-').toLowerCase()
+    const tabTitleId = transformToId(contentTab.tabTitle)
 
     return (
         <div id={tabTitleId} className="content-tab show hidden">

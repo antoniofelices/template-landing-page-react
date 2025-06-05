@@ -1,10 +1,13 @@
 import Card from '@components/patterns/Card'
 import type { CardsSectionProps } from '@/types/interfaces'
+import { transformToId } from '@helpers/utils'
 
 const Cards = ({ content }: { content: CardsSectionProps }) => {
     const contentCards = content.cards
+    const idSection = transformToId(content.title)
+
     return (
-        <section id="download" className="@container/download py-11">
+        <section id={idSection} className="@container/download py-11">
             <h2 className="text-center text-2xl font-bold text-blue-900 lg:text-3xl">
                 {content.title}
             </h2>
