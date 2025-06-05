@@ -6,7 +6,7 @@
             "@components/*": ["src/components/*"],
             "@core/*": ["src/core/*"],
             "@data/*": ["src/data/*"],
-            "@features/*": ["src/components/features/*"],
+            "@features/*": ["src/components/sections/*"],
             "@helpers/*": ["src/helpers/*"],
             "@layouts/*": ["src/layouts/*"],
             "@types/*": ["src/types/*"],
