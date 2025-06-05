@@ -3,7 +3,7 @@ import Home from '@pages/Home'
 import About from '@pages/About'
 import Error404 from '@pages/Error404'
 
-const CustomRoutes = () => (
+const AllRoutes = () => (
     <Routes>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -11,4 +11,4 @@ const CustomRoutes = () => (
     </Routes>
 )
 
-export default CustomRoutes
+export default AllRoutes

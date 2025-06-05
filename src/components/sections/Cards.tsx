@@ -2,23 +2,20 @@ import Card from '@components/patterns/Card'
 import type { CardsSectionProps } from '@/types/interfaces'
 
 const Cards = ({ content }: { content: CardsSectionProps }) => {
+    const contentCards = content.cards
     return (
-        <section>
-            <Card
-                title={content.card1Title}
-                text={content.card1Text}
-                image={content.card1Image}
-            />
-            <Card
-                title={content.card2Title}
-                text={content.card2Text}
-                image={content.card2Image}
-            />
-            <Card
-                title={content.card3Title}
-                text={content.card3Text}
-                image={content.card3Image}
-            />
+        <section id="download" className="@container/download py-11">
+            <h2 className="text-center text-2xl font-bold text-blue-900 lg:text-3xl">
+                {content.title}
+            </h2>
+            <p className="mx-auto max-w-xl p-10 text-center">
+                {content.textIntro}
+            </p>
+            <div className="container-cards mx-auto my-10 grid gap-7 lg:max-w-4xl lg:grid-cols-3">
+                {contentCards.map((card) => (
+                    <Card key={card.id} contentCard={card} />
+                ))}
+            </div>
         </section>
     )
 }

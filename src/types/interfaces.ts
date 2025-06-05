@@ -1,4 +1,5 @@
 export type MainMenuData = {
+    id: number
     text: string
     url: string
 }
@@ -6,13 +7,14 @@ export type ButtonProps = {
     text: string
     url?: string
     classes?: string
-    buttonType?: string
+    buttonType?: 'button' | 'submit' | 'reset'
 }
 export type DetailsProps = {
     summary: string
     text: string
 }
 export type CardProps = {
+    id: number
     title: string
     text: string
     image: string
@@ -20,15 +22,7 @@ export type CardProps = {
 export type CardsSectionProps = {
     title: string
     textIntro: string
-    card1Title: string
-    card1Text: string
-    card1Image: string
-    card2Title: string
-    card2Text: string
-    card2Image: string
-    card3Title: string
-    card3Text: string
-    card3Image: string
+    cards: CardProps[]
 }
 export type HeroSectionProps = {
     title: string
@@ -39,6 +33,7 @@ export type HeroSectionProps = {
     textButton2: string
 }
 export type TabProps = {
+    id: number
     tabTitle: string
     title: string
     text: string

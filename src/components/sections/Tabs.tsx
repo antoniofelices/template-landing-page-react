@@ -18,6 +18,7 @@ const Tabs = ({ content }: { content: TabsSectionProps }) => {
                 <nav className="menu-tabs mb-9 grid py-4 text-base lg:grid-cols-5">
                     {contentTabs.map((tab) => (
                         <button
+                            key={tab.id}
                             type="button"
                             data-tab="simple-bookmarking"
                             className="tab-active border-t border-b border-gray-300 py-4 text-blue-900 lg:col-start-2 lg:col-end-3 lg:border-t-0"
@@ -27,7 +28,7 @@ const Tabs = ({ content }: { content: TabsSectionProps }) => {
                     ))}
                 </nav>
                 {contentTabs.map((tab) => (
-                    <Tab contentTab={tab} />
+                    <Tab key={tab.id} contentTab={tab} />
                 ))}
             </div>
         </section>
