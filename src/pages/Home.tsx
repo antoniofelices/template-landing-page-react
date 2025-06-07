@@ -9,13 +9,28 @@ import featuresHomeData from '@data/home/features'
 import donwloadsHomeData from '@data/home/donwloads'
 import faqsHomeData from '@data/home/faqs'
 import asideHomeData from '@data/home/aside'
+import illustrationHero from '@/assets/images/illustration-hero.svg'
+import illustrationFeaturesTab1 from '@/assets/images/illustration-features-tab-1.svg'
+import illustrationFeaturesTab2 from '@/assets/images/illustration-features-tab-2.svg'
+import illustrationFeaturesTab3 from '@/assets/images/illustration-features-tab-3.svg'
+import logoChrome from '@/assets/images/logo-chrome.svg'
+import logoFirefox from '@/assets/images/logo-firefox.svg'
+import logoOpera from '@/assets/images/logo-opera.svg'
 
 const Home = () => {
+    const illustrationsFeatures = [
+        illustrationFeaturesTab1,
+        illustrationFeaturesTab2,
+        illustrationFeaturesTab3,
+    ]
+
+    const logosBrowsers = [logoChrome, logoFirefox, logoOpera]
+
     return (
         <DefaultLayout>
-            <Hero content={heroHomeData} />
-            <Tabs content={featuresHomeData} />
-            <Cards content={donwloadsHomeData} />
+            <Hero content={heroHomeData} image={illustrationHero} />
+            <Tabs content={featuresHomeData} images={illustrationsFeatures} />
+            <Cards content={donwloadsHomeData} images={logosBrowsers} />
             <Details content={faqsHomeData} />
             <Aside content={asideHomeData} />
         </DefaultLayout>

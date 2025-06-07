@@ -1,7 +1,13 @@
 import Button from '@components/base/Button'
 import type { HeroSectionProps } from '@/types/interfaces'
 
-const Hero = ({ content }: { content: HeroSectionProps }) => {
+const Hero = ({
+    content,
+    image,
+}: {
+    content: HeroSectionProps
+    image: string
+}) => {
     return (
         <section
             id="hero"
@@ -29,10 +35,7 @@ const Hero = ({ content }: { content: HeroSectionProps }) => {
                     </div>
                 </div>
                 <figure className="hero-image order-1 lg:order-2">
-                    <img
-                        src={`/assets/images/${content.image}`}
-                        alt={content.altimage}
-                    />
+                    <img src={image} alt={content.altimage} />
                 </figure>
             </div>
         </section>

@@ -2,7 +2,13 @@ import Tab from '@components/patterns/Tab'
 import type { TabsSectionProps } from '@/types/interfaces'
 import { transformToId } from '@helpers/utils'
 
-const Tabs = ({ content }: { content: TabsSectionProps }) => {
+const Tabs = ({
+    content,
+    images,
+}: {
+    content: TabsSectionProps
+    images: string[]
+}) => {
     const contentTabs = content.tabs
     const idSection = transformToId(content.title)
 
@@ -31,7 +37,7 @@ const Tabs = ({ content }: { content: TabsSectionProps }) => {
                     ))}
                 </nav>
                 {contentTabs.map((tab) => (
-                    <Tab key={tab.id} contentTab={tab} />
+                    <Tab key={tab.id} contentTab={tab} images={images} />
                 ))}
             </div>
         </section>
