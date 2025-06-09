@@ -23,8 +23,9 @@ const Tab = ({
                         {contentTab.text}
                     </p>
                     <Button
-                        classes={`hidden rounded-lg border-2 border-blue bg-blue px-6 py-3 text-sm font-bold text-white hover:border-blue hover:bg-transparent hover:text-blue md:inline-block`}
+                        classes={`hidden md:inline-block`}
                         text={contentTab.buttonText}
+                        variant="blue"
                     />
                 </div>
             </div>

@@ -20,7 +20,11 @@ const Header = () => {
                     <MenuItems content={mainMenuData} />
                 </ul>
             </nav>
-            <Button text={'Login'} />
+            <Button
+                text={'Login'}
+                variant="red"
+                classes={`mt-6 w-[90%] tracking-wide uppercase lg:mt-0 lg:w-auto lg:font-normal px-7`}
+            />
         </header>
     )
 }

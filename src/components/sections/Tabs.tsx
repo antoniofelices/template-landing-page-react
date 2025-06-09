@@ -11,6 +11,9 @@ const Tabs = ({
 }) => {
     const contentTabs = content.tabs
     const idSection = transformToId(content.title)
+    const classesFirstButtonTab =
+        'tab-active border-t border-b border-gray-300 py-4 text-blue-900 lg:col-start-2 lg:col-end-3 lg:border-t-0'
+    const classesRestButtonsTab = 'border-b border-gray-300 py-4'
 
     return (
         <section
@@ -30,7 +33,11 @@ const Tabs = ({
                             key={tab.id}
                             type="button"
                             data-tab="simple-bookmarking"
-                            className="tab-active border-t border-b border-gray-300 py-4 text-blue-900 lg:col-start-2 lg:col-end-3 lg:border-t-0"
+                            className={
+                                tab.id === 0
+                                    ? classesFirstButtonTab
+                                    : classesRestButtonsTab
+                            }
                         >
                             {tab.tabTitle}
                         </button>

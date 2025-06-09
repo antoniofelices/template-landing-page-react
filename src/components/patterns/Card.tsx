@@ -20,11 +20,7 @@ const Card = ({
                 {content.title}
             </h3>
             <p className="text-sm">{content.text}</p>
-            <Button
-                buttonType={`button`}
-                text={content.buttonText}
-                classes={`rounded-lg border-2 border-blue bg-blue px-3 py-2 text-sm font-bold text-white hover:border-blue hover:bg-transparent hover:text-blue`}
-            />
+            <Button buttonType="button" text={content.buttonText} />
         </div>
     )
 }

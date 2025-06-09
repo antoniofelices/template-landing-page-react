@@ -1,8 +1,9 @@
 export type ButtonProps = {
+    buttonType?: 'button' | 'submit' | 'reset'
+    classes?: string
     text: string
     url?: string
-    classes?: string
-    buttonType?: 'button' | 'submit' | 'reset'
+    variant?: string
 }
 export type DetailProps = {
     id: number

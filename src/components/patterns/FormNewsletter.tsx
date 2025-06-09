@@ -21,9 +21,10 @@ const FormNewsletter = ({ content }: { content: FormSuscribeProps }) => {
                     </p>
                 </div>
                 <Button
-                    buttonType={`submit`}
-                    classes={`w-full rounded-lg border-2 border-red bg-red px-3 py-2 text-xs font-bold text-white hover:border-red hover:bg-white hover:text-red lg:col-span-2`}
+                    buttonType="submit"
+                    classes={`w-full lg:col-span-2`}
                     text={content.textButton}
+                    variant="red"
                 />
             </div>
         </form>
