@@ -1,14 +1,31 @@
 import type { MainMenuData } from '@/types/interfaces'
 import { NavLink } from 'react-router'
 
-const MenuItems = ({ content }: { content: MainMenuData[] }) => {
+const MenuItems = ({
+    content,
+    variant,
+}: {
+    content: MainMenuData[]
+    variant?: string
+}) => {
+    const classesListElement =
+        variant === 'inverse'
+            ? 'px-4 py-3 lg:py-0'
+            : 'border-t border-gray-500 px-4 py-6 lg:border-t-0 lg:py-0'
+    const classesLinkElement =
+        variant === 'inverse'
+            ? 'text-gray-300 hover:text-red'
+            : 'text-white hover:text-red lg:text-blue-900'
+
     return (
         <>
             {content.map((item) => (
-                <li key={item.id}>
+                <li key={item.id} className={classesListElement}>
                     <NavLink
                         to={`/${item.url}`}
-                        className={({ isActive }) => (isActive ? 'active' : '')}
+                        className={({ isActive }) =>
+                            `${classesLinkElement} ${isActive ? 'active' : ''}`
+                        }
                     >
                         {item.text}
                     </NavLink>

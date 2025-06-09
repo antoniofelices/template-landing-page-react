@@ -14,7 +14,7 @@ const Details = ({ content }: { content: DetailsSectionProps }) => {
                     {content.title}
                 </h2>
                 <p className="py-10 text-center">{content.textIntro}</p>
-                <div className="">
+                <div className="lg:border-t border-gray-300">
                     {contentDetails.map((detail) => (
                         <Detail key={detail.id} contentDetail={detail} />
                     ))}
