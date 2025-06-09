@@ -1,8 +1,9 @@
 export type ButtonProps = {
+    buttonType?: 'button' | 'submit' | 'reset'
+    classes?: string
     text: string
     url?: string
-    classes?: string
-    buttonType?: 'button' | 'submit' | 'reset'
+    variant?: string
 }
 export type DetailProps = {
     id: number
@@ -20,6 +21,7 @@ export type CardProps = {
     title: string
     text: string
     image: string
+    buttonText: string
 }
 export type CardsSectionProps = {
     title: string
@@ -40,7 +42,6 @@ export type FormSuscribeProps = {
 export type HeroSectionProps = {
     title: string
     textIntro: string
-    image: string
     altimage: string
     textButton1: string
     textButton2: string
@@ -56,7 +57,6 @@ export type TabProps = {
     title: string
     text: string
     buttonText: string
-    image: string
 }
 export type TabsSectionProps = {
     title: string

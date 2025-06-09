@@ -2,7 +2,7 @@ import type { DetailProps } from '@/types/interfaces'
 
 const Detail = ({ contentDetail }: { contentDetail: DetailProps }) => {
     return (
-        <details className="my-3 border-b border-gray-300 stroke-blue py-5 marker:content-[''] open:stroke-red lg:border-t">
+        <details className="my-3 border-b border-gray-300 stroke-blue py-5 marker:content-[''] open:stroke-red">
             <summary className="flex items-center justify-between text-blue-900 lg:text-lg">
                 {contentDetail.summary}
                 <svg

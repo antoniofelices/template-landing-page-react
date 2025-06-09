@@ -2,7 +2,13 @@ import Card from '@components/patterns/Card'
 import type { CardsSectionProps } from '@/types/interfaces'
 import { transformToId } from '@helpers/utils'
 
-const Cards = ({ content }: { content: CardsSectionProps }) => {
+const Cards = ({
+    content,
+    images,
+}: {
+    content: CardsSectionProps
+    images: string[]
+}) => {
     const contentCards = content.cards
     const idSection = transformToId(content.title)
 
@@ -16,7 +22,7 @@ const Cards = ({ content }: { content: CardsSectionProps }) => {
             </p>
             <div className="container-cards mx-auto my-10 grid gap-7 lg:max-w-4xl lg:grid-cols-3">
                 {contentCards.map((card) => (
-                    <Card key={card.id} contentCard={card} />
+                    <Card key={card.id} content={card} images={images} />
                 ))}
             </div>
         </section>

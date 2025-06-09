@@ -1,7 +1,13 @@
 import Button from '@components/base/Button'
 import type { HeroSectionProps } from '@/types/interfaces'
 
-const Hero = ({ content }: { content: HeroSectionProps }) => {
+const Hero = ({
+    content,
+    image,
+}: {
+    content: HeroSectionProps
+    image: string
+}) => {
     return (
         <section
             id="hero"
@@ -17,22 +23,20 @@ const Hero = ({ content }: { content: HeroSectionProps }) => {
                     </p>
                     <div className="flex justify-center gap-2 lg:justify-start">
                         <Button
-                            classes={`rounded-lg border-2 border-blue bg-blue px-3 py-3 text-sm font-bold text-white hover:border-blue hover:bg-transparent hover:text-blue lg:px-6`}
-                            buttonType={`button`}
+                            buttonType="button"
+                            classes={`lg:px-6`}
                             text={content.textButton1}
                         />
                         <Button
-                            classes={`rounded-lg border-2 px-3 py-3 text-sm font-bold shadow-lg shadow-gray-300/100 hover:border-gray-500 hover:text-gray-500 hover:shadow-none lg:px-6`}
-                            buttonType={`button`}
+                            buttonType="button"
+                            classes={`lg:px-6`}
                             text={content.textButton2}
+                            variant="transparent"
                         />
                     </div>
                 </div>
                 <figure className="hero-image order-1 lg:order-2">
-                    <img
-                        src={`/assets/images/${content.image}`}
-                        alt={content.altimage}
-                    />
+                    <img src={image} alt={content.altimage} />
                 </figure>
             </div>
         </section>

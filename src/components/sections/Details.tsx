@@ -14,16 +14,13 @@ const Details = ({ content }: { content: DetailsSectionProps }) => {
                     {content.title}
                 </h2>
                 <p className="py-10 text-center">{content.textIntro}</p>
-                <div className="">
+                <div className="lg:border-t border-gray-300">
                     {contentDetails.map((detail) => (
                         <Detail key={detail.id} contentDetail={detail} />
                     ))}
                 </div>
                 <p className="my-7 flex justify-center">
-                    <Button
-                        classes={`rounded-lg border-2 border-blue bg-blue px-6 py-3 text-sm font-bold text-white hover:border-blue hover:bg-transparent hover:text-blue`}
-                        text={content.textButton}
-                    />
+                    <Button text={content.textButton} />
                 </p>
             </div>
         </section>
