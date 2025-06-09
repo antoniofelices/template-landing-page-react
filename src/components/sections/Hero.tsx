@@ -22,17 +22,21 @@ const Hero = ({
                         {content.textIntro}
                     </p>
                     <div className="flex justify-center gap-2 lg:justify-start">
-                        <Button
-                            buttonType="button"
-                            classes={`lg:px-6`}
-                            text={content.textButton1}
-                        />
-                        <Button
-                            buttonType="button"
-                            classes={`lg:px-6`}
-                            text={content.textButton2}
-                            variant="transparent"
-                        />
+                        {content.textButton1 && (
+                            <Button
+                                buttonType="button"
+                                classes={`lg:px-6`}
+                                text={content.textButton1}
+                            />
+                        )}
+                        {content.textButton2 && (
+                            <Button
+                                buttonType="button"
+                                classes={`lg:px-6`}
+                                text={content.textButton2}
+                                variant="transparent"
+                            />
+                        )}
                     </div>
                 </div>
                 <figure className="hero-image order-1 lg:order-2">

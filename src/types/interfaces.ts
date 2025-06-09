@@ -1,9 +1,27 @@
+export type AsideSectionProps = {
+    text1: string
+    text2?: string
+    form?: FormSuscribeProps
+    button?: ButtonProps
+}
 export type ButtonProps = {
     buttonType?: 'button' | 'submit' | 'reset'
     classes?: string
     text: string
     url?: string
     variant?: string
+}
+export type CardProps = {
+    id: number
+    title: string
+    text: string
+    image?: string
+    buttonText?: string
+}
+export type CardsSectionProps = {
+    title: string
+    textIntro: string
+    cards: CardProps[]
 }
 export type DetailProps = {
     id: number
@@ -16,24 +34,6 @@ export type DetailsSectionProps = {
     details: DetailProps[]
     textButton: string
 }
-export type CardProps = {
-    id: number
-    title: string
-    text: string
-    image: string
-    buttonText: string
-}
-export type CardsSectionProps = {
-    title: string
-    textIntro: string
-    cards: CardProps[]
-}
-export type AsideSectionProps = {
-    text1: string
-    text2: string
-    form?: FormSuscribeProps
-    button?: ButtonProps
-}
 export type FormSuscribeProps = {
     textLabel: string
     textError: string
@@ -42,9 +42,9 @@ export type FormSuscribeProps = {
 export type HeroSectionProps = {
     title: string
     textIntro: string
-    altimage: string
-    textButton1: string
-    textButton2: string
+    altimage?: string
+    textButton1?: string
+    textButton2?: string
 }
 export type MainMenuData = {
     id: number
@@ -56,7 +56,7 @@ export type TabProps = {
     tabTitle: string
     title: string
     text: string
-    buttonText: string
+    buttonText?: string
 }
 export type TabsSectionProps = {
     title: string

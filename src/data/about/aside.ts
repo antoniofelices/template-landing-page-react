@@ -1,8 +1,7 @@
 import type { AsideSectionProps } from '@/types/interfaces'
 
 const asideAboutData: AsideSectionProps = {
-    text1: 'Lorem calar 35.000+ Already Joined',
-    text2: "Calar dolor jaun Stay up-to-date with what we're doing",
+    text1: 'Aliquam congue eget tortor vel lobortis. Sed ultrices enim mattis sapien sagittis, in finibus mi laoreet. ',
     button: {
         text: 'Sign in!',
     },
