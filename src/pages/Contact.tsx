@@ -17,7 +17,7 @@ import logoChrome from '@/assets/images/logo-chrome.svg'
 import logoFirefox from '@/assets/images/logo-firefox.svg'
 import logoOpera from '@/assets/images/logo-opera.svg'
 
-const Home = () => {
+const Contact = () => {
     const illustrationsFeatures = [
         illustrationFeaturesTab1,
         illustrationFeaturesTab2,
@@ -41,4 +41,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Contact

@@ -10,7 +10,11 @@ import illustrationHero from '@/assets/images/illustration-features-tab-2.svg'
 function About() {
     return (
         <DefaultLayout>
-            <Hero content={heroAboutData} image={illustrationHero} />
+            <Hero
+                content={heroAboutData}
+                image={illustrationHero}
+                classes="bg-gray-200 text-blue-900"
+            />
             <Cards content={keyConceptsAboutData} />
             <Aside content={asideAboutData} />
         </DefaultLayout>

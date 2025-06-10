@@ -63,6 +63,3 @@ export type TabsSectionProps = {
     textIntro: string
     tabs: TabProps[]
 }
-export type ReactElementProps = {
-    children: React.ReactNode
-}
