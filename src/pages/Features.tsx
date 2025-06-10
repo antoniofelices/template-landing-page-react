@@ -1,42 +1,22 @@
 import DefaultLayout from '@layouts/DefaultLayout'
 import Hero from '@components/sections/Hero'
-import Tabs from '@components/sections/Tabs'
+import Aside from '@components/sections/Aside'
 import Cards from '@components/sections/Cards'
-import Details from '@/components/sections/Details'
-import Aside from '@/components/sections/Aside'
-import heroHomeData from '@data/home/hero'
-import featuresHomeData from '@data/home/features'
-import donwloadsHomeData from '@data/home/donwloads'
-import faqsHomeData from '@data/home/faqs'
-import asideHomeData from '@data/home/aside'
-import illustrationHero from '@/assets/images/illustration-hero.svg'
-import illustrationFeaturesTab1 from '@/assets/images/illustration-features-tab-1.svg'
-import illustrationFeaturesTab2 from '@/assets/images/illustration-features-tab-2.svg'
-import illustrationFeaturesTab3 from '@/assets/images/illustration-features-tab-3.svg'
-import logoChrome from '@/assets/images/logo-chrome.svg'
-import logoFirefox from '@/assets/images/logo-firefox.svg'
-import logoOpera from '@/assets/images/logo-opera.svg'
+import heroFeaturesData from '@data/features/hero'
+import asideFeaturesData from '@data/features/aside'
+import keyConceptsFeaturesData from '@data/features/keyConcepts'
+import illustrationHero from '@/assets/images/illustration-features-tab-2.svg'
 
-const Features = () => {
-    const illustrationsFeatures = [
-        illustrationFeaturesTab1,
-        illustrationFeaturesTab2,
-        illustrationFeaturesTab3,
-    ]
-
-    const logosBrowsers = [logoChrome, logoFirefox, logoOpera]
-
+function Features() {
     return (
         <DefaultLayout>
             <Hero
-                content={heroHomeData}
+                content={heroFeaturesData}
                 image={illustrationHero}
-                backgroundImage={true}
+                classes="bg-gray-200 text-blue-900"
             />
-            <Tabs content={featuresHomeData} images={illustrationsFeatures} />
-            <Cards content={donwloadsHomeData} images={logosBrowsers} />
-            <Details content={faqsHomeData} />
-            <Aside content={asideHomeData} />
+            <Cards content={keyConceptsFeaturesData} />
+            <Aside content={asideFeaturesData} />
         </DefaultLayout>
     )
 }

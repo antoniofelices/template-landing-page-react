@@ -54,6 +54,7 @@ const Header = () => {
                         text={'Login'}
                         variant="red"
                         classes={`mt-6 w-[90%] tracking-wide uppercase lg:mt-0 lg:w-auto lg:font-normal px-7`}
+                        url="/login"
                     />
                 </div>
                 <nav className="social-menu pt-[6rem] lg:hidden lg:pt-0">

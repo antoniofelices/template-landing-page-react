@@ -1,7 +1,7 @@
 import type { CardsSectionProps } from '@/types/interfaces'
 
-const keyConceptsAboutData: CardsSectionProps = {
-    title: 'Key Concepts',
+const keyConceptsFeaturesData: CardsSectionProps = {
+    title: 'Concepts',
     textIntro:
         'In a mauris interdum, commodo erat ac, consectetur dolor. Duis tempor urna quis tellus sodales tempus. Suspendisse suscipit nisl eu justo pretium fringilla.',
     cards: [
@@ -38,4 +38,4 @@ const keyConceptsAboutData: CardsSectionProps = {
     ],
 }
 
-export default keyConceptsAboutData
+export default keyConceptsFeaturesData

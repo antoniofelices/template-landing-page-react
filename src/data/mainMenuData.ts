@@ -3,7 +3,7 @@ import type { MainMenuData } from '@/types/interfaces'
 const mainMenuData: MainMenuData[] = [
     {
         id: 1,
-        url: '#',
+        url: 'features',
         text: 'Features',
     },
     {
@@ -18,11 +18,6 @@ const mainMenuData: MainMenuData[] = [
     },
     {
         id: 4,
-        url: 'about',
-        text: 'About',
-    },
-    {
-        id: 5,
         url: 'error',
         text: 'Error',
     },

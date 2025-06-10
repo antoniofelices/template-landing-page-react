@@ -1,42 +1,21 @@
 import DefaultLayout from '@layouts/DefaultLayout'
 import Hero from '@components/sections/Hero'
-import Tabs from '@components/sections/Tabs'
-import Cards from '@components/sections/Cards'
-import Details from '@/components/sections/Details'
-import Aside from '@/components/sections/Aside'
-import heroHomeData from '@data/home/hero'
-import featuresHomeData from '@data/home/features'
-import donwloadsHomeData from '@data/home/donwloads'
-import faqsHomeData from '@data/home/faqs'
-import asideHomeData from '@data/home/aside'
-import illustrationHero from '@/assets/images/illustration-hero.svg'
-import illustrationFeaturesTab1 from '@/assets/images/illustration-features-tab-1.svg'
-import illustrationFeaturesTab2 from '@/assets/images/illustration-features-tab-2.svg'
-import illustrationFeaturesTab3 from '@/assets/images/illustration-features-tab-3.svg'
-import logoChrome from '@/assets/images/logo-chrome.svg'
-import logoFirefox from '@/assets/images/logo-firefox.svg'
-import logoOpera from '@/assets/images/logo-opera.svg'
+import heroContactData from '@data/contact/hero'
+import FormNewsletter from '@/components/patterns/FormNewsletter'
+import FormContactData from '@data/contact/form'
+import illustrationHero from '@/assets/images/error404-finestre.webp'
 
-const Contact = () => {
-    const illustrationsFeatures = [
-        illustrationFeaturesTab1,
-        illustrationFeaturesTab2,
-        illustrationFeaturesTab3,
-    ]
-
-    const logosBrowsers = [logoChrome, logoFirefox, logoOpera]
-
+function Contact() {
     return (
         <DefaultLayout>
             <Hero
-                content={heroHomeData}
+                content={heroContactData}
                 image={illustrationHero}
-                backgroundImage={true}
+                backgroundImage={false}
             />
-            <Tabs content={featuresHomeData} images={illustrationsFeatures} />
-            <Cards content={donwloadsHomeData} images={logosBrowsers} />
-            <Details content={faqsHomeData} />
-            <Aside content={asideHomeData} />
+            <section className="container max-w-5xl py-11">
+                <FormNewsletter content={FormContactData} />
+            </section>
         </DefaultLayout>
     )
 }

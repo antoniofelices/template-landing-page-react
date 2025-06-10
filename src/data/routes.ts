@@ -1,2 +1,2 @@
-const routes: string[] = ['About', 'Contact', 'Error', 'Features', 'Pricing']
+const routes: string[] = ['Contact', 'Error', 'Features', 'Login', 'Pricing']
 export default routes
