@@ -8,12 +8,12 @@ const mainMenuData: MainMenuData[] = [
     },
     {
         id: 2,
-        url: '#',
+        url: 'pricing',
         text: 'Pricing',
     },
     {
         id: 3,
-        url: '#',
+        url: 'contact',
         text: 'Contact',
     },
     {

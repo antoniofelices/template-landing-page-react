@@ -22,11 +22,13 @@ const Tab = ({
                     <p className="my-7 text-center lg:text-left">
                         {contentTab.text}
                     </p>
-                    <Button
-                        classes={`hidden md:inline-block`}
-                        text={contentTab.buttonText}
-                        variant="blue"
-                    />
+                    {contentTab.buttonText && (
+                        <Button
+                            classes={`hidden md:inline-block`}
+                            text={contentTab.buttonText}
+                            variant="blue"
+                        />
+                    )}
                 </div>
             </div>
         </div>
