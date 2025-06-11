@@ -24,7 +24,9 @@ const MenuItems = ({
                     <NavLink
                         to={`/${item.url}`}
                         className={({ isActive }) =>
-                            `${classesLinkElement} ${isActive ? 'active' : ''}`
+                            `${classesLinkElement} ${
+                                isActive ? 'border-b border-current pb-2' : ''
+                            }`
                         }
                     >
                         {item.text}

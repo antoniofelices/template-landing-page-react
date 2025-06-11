@@ -1,6 +1,7 @@
 import Tab from '@components/patterns/Tab'
 import type { TabsSectionProps } from '@/types/interfaces'
 import { transformToId } from '@helpers/utils'
+import { useState } from 'react'
 
 const Tabs = ({
     content,
@@ -14,6 +15,9 @@ const Tabs = ({
     const classesFirstButtonTab =
         'tab-active border-t border-b border-gray-300 py-4 text-blue-900 lg:col-start-2 lg:col-end-3 lg:border-t-0'
     const classesRestButtonsTab = 'border-b border-gray-300 py-4'
+
+    const initialState = contentTabs[0]
+    const [value, setValue] = useState(initialState)
 
     return (
         <section
@@ -33,6 +37,9 @@ const Tabs = ({
                             key={tab.id}
                             type="button"
                             data-tab="simple-bookmarking"
+                            onClick={() => {
+                                setValue(tab)
+                            }}
                             className={
                                 tab.id === 0
                                     ? classesFirstButtonTab
@@ -43,9 +50,7 @@ const Tabs = ({
                         </button>
                     ))}
                 </nav>
-                {contentTabs.map((tab) => (
-                    <Tab key={tab.id} contentTab={tab} images={images} />
-                ))}
+                <Tab contentTab={value} images={images} />
             </div>
         </section>
     )

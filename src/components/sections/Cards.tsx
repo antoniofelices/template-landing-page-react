@@ -7,7 +7,7 @@ const Cards = ({
     images,
 }: {
     content: CardsSectionProps
-    images: string[]
+    images?: string[]
 }) => {
     const contentCards = content.cards
     const idSection = transformToId(content.title)

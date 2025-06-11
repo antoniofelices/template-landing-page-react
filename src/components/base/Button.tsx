@@ -8,6 +8,7 @@ const Button = ({
     variant,
     buttonType = 'button',
 }: ButtonProps) => {
+    const individualClasses = classes ? classes : ''
     let variantOption =
         'border-blue bg-blue text-white hover:border-blue hover:bg-transparent hover:text-blue'
 
@@ -24,7 +25,7 @@ const Button = ({
     return (
         <>
             <button
-                className={`rounded-lg border-2 px-3 py-2 font-bold text-sm ${variantOption} ${classes}`}
+                className={`rounded-lg border-2 px-3 py-2 font-bold text-sm ${variantOption} ${individualClasses}`}
                 type={buttonType}
             >
                 {url ? <Link to={url}>{text}</Link> : <>{text}</>}

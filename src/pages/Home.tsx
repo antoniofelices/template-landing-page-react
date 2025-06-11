@@ -28,7 +28,11 @@ const Home = () => {
 
     return (
         <DefaultLayout>
-            <Hero content={heroHomeData} image={illustrationHero} />
+            <Hero
+                content={heroHomeData}
+                image={illustrationHero}
+                backgroundImage={true}
+            />
             <Tabs content={featuresHomeData} images={illustrationsFeatures} />
             <Cards content={donwloadsHomeData} images={logosBrowsers} />
             <Details content={faqsHomeData} />
