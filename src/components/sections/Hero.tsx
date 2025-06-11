@@ -1,4 +1,5 @@
 import Button from '@components/base/Button'
+import TitleParagraph from '@components/patterns/TitleParagraph'
 import type { HeroSectionProps } from '@/types/interfaces'
 
 const Hero = ({
@@ -24,12 +25,11 @@ const Hero = ({
         >
             <div className="hero-container container grid max-w-5xl lg:grid-cols-2 lg:gap-(--spacing-7) lg:text-center">
                 <div className="hero-text order-2 lg:order-1">
-                    <h1 className="mf-line-height-xs my-8 text-center text-3xl font-bold text-blue-900 lg:text-left lg:text-4xl">
-                        {content.title}
-                    </h1>
-                    <p className="my-7 text-center lg:text-left">
-                        {content.textIntro}
-                    </p>
+                    <TitleParagraph
+                        title={content.title}
+                        text={content.textIntro}
+                        variant="h1"
+                    />
                     <div className="flex justify-center gap-2 lg:justify-start">
                         {content.textButton1 && (
                             <Button

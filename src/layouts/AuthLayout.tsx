@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from 'react'
 
-const LandingLayout = ({ children }: PropsWithChildren) => {
+const AuthLayout = ({ children }: PropsWithChildren) => {
     return (
         <>
             <main>{children}</main>
@@ -8,4 +8,4 @@ const LandingLayout = ({ children }: PropsWithChildren) => {
     )
 }
 
-export default LandingLayout
+export default AuthLayout

@@ -1,6 +1,6 @@
 import type { CardsSectionProps } from '@/types/interfaces'
 
-const listPrices: CardsSectionProps = {
+const listPricingData: CardsSectionProps = {
     title: 'List of prices',
     textIntro:
         'In a mauris interdum, commodo erat ac, consectetur dolor. Duis tempor urna quis tellus sodales tempus.',
@@ -26,4 +26,4 @@ const listPrices: CardsSectionProps = {
     ],
 }
 
-export default listPrices
+export default listPricingData

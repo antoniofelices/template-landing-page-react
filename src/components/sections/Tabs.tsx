@@ -1,4 +1,5 @@
 import Tab from '@components/patterns/Tab'
+import TitleParagraph from '@components/patterns/TitleParagraph'
 import type { TabsSectionProps } from '@/types/interfaces'
 import { transformToId } from '@helpers/utils'
 import { useState } from 'react'
@@ -24,13 +25,14 @@ const Tabs = ({
             id={idSection}
             className="@container/features relative py-11 after:absolute after:bottom-[25%] after:left-0 after:-z-1 after:block after:h-[240px] after:w-[300px] after:rounded-br-[50%] after:bg-blue after:content-[''] lg:after:bottom-0 lg:after:h-[40%] lg:after:w-[40%]"
         >
+            <div className="container lg:max-w-2xl">
+                <TitleParagraph
+                    title={content.title}
+                    text={content.textIntro}
+                    variant="h2"
+                />
+            </div>
             <div className="container max-w-5xl">
-                <h2 className="text-center text-2xl font-bold text-blue-900 lg:text-3xl">
-                    {content.title}
-                </h2>
-                <p className="mx-auto p-10 text-center lg:max-w-3xl">
-                    {content.textIntro}
-                </p>
                 <nav className="menu-tabs mb-9 grid py-4 text-base lg:grid-cols-5">
                     {contentTabs.map((tab) => (
                         <button

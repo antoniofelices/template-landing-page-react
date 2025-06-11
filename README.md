@@ -2,14 +2,16 @@
 
 ## Description
 
-Refact sprint 1 Template Landing Page using React.
+Refact sprint 1 Template Landing Page using React… at the end is a small website with some dummy pages.
 
-<img src="#" alt="Preview" width="200"/>
+<img src="src/assets/images/preview-01.webp" alt="Preview" width="200"/>
 
 ### Some decisions
 
 -   Use Vite and Vitest as development tools.
--   Start using TypeScript from the beginning..
+-   Start using TypeScript from the beginning.
+-   Include React Router and some dummy pages.
+-   The data enters through the pages component.
 
 ## Technologies
 
@@ -48,6 +50,8 @@ $ npm run dev
 
 ## Future Improvements
 
+-   Add tests.
+-   Work on the Login page.
 -   Move the errors to a separate log file.
 -   Save local data on `localStore` and `sessionStore`
 

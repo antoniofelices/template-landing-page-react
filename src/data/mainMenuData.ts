@@ -16,11 +16,6 @@ const mainMenuData: MainMenuData[] = [
         url: 'contact',
         text: 'Contact',
     },
-    {
-        id: 4,
-        url: 'error',
-        text: 'Error',
-    },
 ]
 
 export default mainMenuData

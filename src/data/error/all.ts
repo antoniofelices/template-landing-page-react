@@ -1,8 +1,8 @@
-const heroError404Data = {
+const allError404Data = {
     title: 'We are lost',
     textIntro:
         'In the middle of nowhere, where there is nothing but silence and solitude.',
-    altimage: 'A beautiful illustration backend app',
+    altimage: 'A beautiful picture of Colle delle Finestre',
 }
 
-export default heroError404Data
+export default allError404Data

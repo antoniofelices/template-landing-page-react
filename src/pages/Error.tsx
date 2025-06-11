@@ -1,21 +1,32 @@
 import DefaultLayout from '@layouts/DefaultLayout'
-import Hero from '@/components/sections/Hero'
-import heroError404Data from '@/data/error/hero'
-import illustrationHero from '@/assets/images/error404-finestre.webp'
+import Container from '@components/base/Container'
+import TitleParagraph from '@components/patterns/TitleParagraph'
+import allError404Data from '@/data/error/all'
+import pictureColleDelleFinestre from '@/assets/images/error404-finestre.webp'
 import { NavLink } from 'react-router'
 
 function Error404() {
     return (
         <DefaultLayout>
-            <Hero
-                content={heroError404Data}
-                image={illustrationHero}
-                backgroundImage={false}
-            />
-            <p className="mx-auto max-w-xl text-2xl py-15 font-bold text-blue-900 lg:text-3xl text-center">
-                Please try returning to the <NavLink to="/">Front Page</NavLink>
-                .
-            </p>
+            <Container>
+                <img
+                    src={pictureColleDelleFinestre}
+                    alt={allError404Data.altimage}
+                />
+                <TitleParagraph
+                    title={allError404Data.title}
+                    variant="h1"
+                    text={allError404Data.textIntro}
+                />
+                <ul>
+                    <li>
+                        <NavLink to="/">Front Page</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/">Login</NavLink>
+                    </li>
+                </ul>
+            </Container>
         </DefaultLayout>
     )
 }
