@@ -1,5 +1,6 @@
 import Detail from '@components/base/Detail'
 import Button from '@components/base/Button'
+import TitleParagraph from '@components/patterns/TitleParagraph'
 import type { DetailsSectionProps } from '@/types/interfaces'
 import { transformToId } from '@helpers/utils'
 
@@ -9,11 +10,14 @@ const Details = ({ content }: { content: DetailsSectionProps }) => {
 
     return (
         <section id={idSection} className="@container/faqs py-11">
+            <div className="container lg:max-w-xl">
+                <TitleParagraph
+                    title={content.title}
+                    text={content.textIntro}
+                    variant="h2"
+                />
+            </div>
             <div className="container max-w-xl">
-                <h2 className="text-center text-2xl font-bold text-blue-900 lg:text-3xl">
-                    {content.title}
-                </h2>
-                <p className="py-10 text-center">{content.textIntro}</p>
                 <div className="lg:border-t border-gray-300">
                     {contentDetails.map((detail) => (
                         <Detail key={detail.id} contentDetail={detail} />

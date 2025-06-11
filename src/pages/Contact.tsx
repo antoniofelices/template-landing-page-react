@@ -1,21 +1,27 @@
 import DefaultLayout from '@layouts/DefaultLayout'
-import Hero from '@components/sections/Hero'
-import heroContactData from '@data/contact/hero'
+import Container from '@components/base/Container'
+import Card from '@components/patterns/Card'
+import TitleParagraph from '@components/patterns/TitleParagraph'
+import allContactData from '@/data/contact/all'
 import FormNewsletter from '@/components/patterns/FormNewsletter'
-import FormContactData from '@data/contact/form'
-import illustrationHero from '@/assets/images/error404-finestre.webp'
 
 function Contact() {
     return (
         <DefaultLayout>
-            <Hero
-                content={heroContactData}
-                image={illustrationHero}
-                backgroundImage={false}
-            />
-            <section className="container max-w-5xl py-11">
-                <FormNewsletter content={FormContactData} />
-            </section>
+            <Container>
+                <TitleParagraph
+                    title={allContactData.title}
+                    text={allContactData.textIntro}
+                    variant="h1"
+                />
+                <div className="grid gap-7 lg:max-w-4xl lg:grid-cols-2 py-11">
+                    <Card content={allContactData.infoDepartment1} />
+                    <Card content={allContactData.infoDepartment2} />
+                </div>
+                <section className="max-w-xl py-11">
+                    <FormNewsletter content={allContactData.form} />
+                </section>
+            </Container>
         </DefaultLayout>
     )
 }

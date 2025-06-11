@@ -12,13 +12,13 @@ import illustrationFeaturesTab2 from '@/assets/images/illustration-features-tab-
 const Pricing = () => {
     return (
         <DefaultLayout>
+            <Cards content={listPricingData} />
             <Hero
                 content={heroPricingData}
                 image={illustrationFeaturesTab2}
                 backgroundImage={false}
                 classes="bg-gray-200 text-blue-900"
             />
-            <Cards content={listPricingData} />
             <Aside content={asidePricingData} />
         </DefaultLayout>
     )
