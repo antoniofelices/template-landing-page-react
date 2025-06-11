@@ -1,7 +1,6 @@
 import DefaultLayout from '@layouts/DefaultLayout'
 import Container from '@components/base/Container'
 import TitleParagraph from '@components/patterns/TitleParagraph'
-
 import allError404Data from '@/data/error/all'
 import pictureColleDelleFinestre from '@/assets/images/error404-finestre.webp'
 import { NavLink } from 'react-router'
