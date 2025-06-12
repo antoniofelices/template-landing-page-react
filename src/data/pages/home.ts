@@ -6,7 +6,7 @@ import type {
     HeroSectionProps,
 } from '@/types/interfaces'
 
-const asideHomeData: AsideSectionProps = {
+const asideData: AsideSectionProps = {
     text1: '35.000+ Already Joined',
     text2: "Stay up-to-date with what we're doing",
     form: {
@@ -16,7 +16,7 @@ const asideHomeData: AsideSectionProps = {
     },
 }
 
-const donwloadsHomeData: CardsSectionProps = {
+const donwloadsData: CardsSectionProps = {
     title: 'Download the extension',
     textIntro:
         "We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.",
@@ -45,7 +45,7 @@ const donwloadsHomeData: CardsSectionProps = {
     ],
 }
 
-const faqsHomeData: DetailsSectionProps = {
+const faqsData: DetailsSectionProps = {
     title: 'Frequently Asked Questions',
     textIntro:
         "Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.",
@@ -74,7 +74,7 @@ const faqsHomeData: DetailsSectionProps = {
     textButton: 'More Info',
 }
 
-const featuresHomeData: TabsSectionProps = {
+const featuresData: TabsSectionProps = {
     title: 'Features',
     textIntro:
         'In a mauris interdum, commodo erat ac, consectetur dolor. Duis tempor urna quis tellus sodales tempus. Suspendisse suscipit nisl eu justo pretium fringilla.',
@@ -103,7 +103,7 @@ const featuresHomeData: TabsSectionProps = {
     ],
 }
 
-const heroHomeData: HeroSectionProps = {
+const heroData: HeroSectionProps = {
     title: ' A Simple Bookmark Manager',
     textIntro:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus arcu, commodo sit amet mollis quis, euismod nec metus. Praesent sed scelerisque tellus. Integer auctor suscipit purus.',
@@ -112,10 +112,4 @@ const heroHomeData: HeroSectionProps = {
     textButton2: 'Get It On Firefox',
 }
 
-export {
-    asideHomeData,
-    donwloadsHomeData,
-    faqsHomeData,
-    featuresHomeData,
-    heroHomeData,
-}
+export { asideData, donwloadsData, faqsData, featuresData, heroData }

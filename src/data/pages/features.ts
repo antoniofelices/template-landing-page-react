@@ -4,14 +4,14 @@ import type {
     HeroSectionProps,
 } from '@/types/interfaces'
 
-const asideFeaturesData: AsideSectionProps = {
+const asideData: AsideSectionProps = {
     text1: 'Aliquam congue eget tortor vel lobortis. Sed ultrices enim mattis sapien sagittis, in finibus mi laoreet. ',
     button: {
         text: 'Sign in!',
     },
 }
 
-const keyConceptsFeaturesData: CardsSectionProps = {
+const keyConceptsData: CardsSectionProps = {
     title: 'Concepts',
     textIntro:
         'In a mauris interdum, commodo erat ac, consectetur dolor. Duis tempor urna quis tellus sodales tempus. Suspendisse suscipit nisl eu justo pretium fringilla.',
@@ -49,14 +49,14 @@ const keyConceptsFeaturesData: CardsSectionProps = {
     ],
 }
 
-const heroFeaturesData: HeroSectionProps = {
+const heroData: HeroSectionProps = {
     title: 'Features',
     textIntro:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus arcu, commodo sit amet mollis quis, euismod nec metus. Praesent sed scelerisque tellus. Integer auctor suscipit purus.',
     altimage: 'A beautiful illustration backend app',
 }
 
-const newsFeaturesData = {
+const newsData = {
     title: "What's new",
     news: [
         {
@@ -72,9 +72,4 @@ const newsFeaturesData = {
     ],
 }
 
-export {
-    asideFeaturesData,
-    heroFeaturesData,
-    keyConceptsFeaturesData,
-    newsFeaturesData,
-}
+export { asideData, heroData, keyConceptsData, newsData }

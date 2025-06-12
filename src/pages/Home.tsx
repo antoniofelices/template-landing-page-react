@@ -6,11 +6,11 @@ import Details from '@/components/sections/Details'
 import Aside from '@/components/sections/Aside'
 
 import {
-    heroHomeData,
-    featuresHomeData,
-    donwloadsHomeData,
-    faqsHomeData,
-    asideHomeData,
+    heroData,
+    featuresData,
+    donwloadsData,
+    faqsData,
+    asideData,
 } from '@/data/pages/home'
 
 import illustrationHero from '@/assets/images/illustration-hero.svg'
@@ -33,14 +33,14 @@ const Home = () => {
     return (
         <DefaultLayout>
             <Hero
-                content={heroHomeData}
+                content={heroData}
                 image={illustrationHero}
                 backgroundImage={true}
             />
-            <Tabs content={featuresHomeData} images={illustrationsFeatures} />
-            <Cards content={donwloadsHomeData} images={logosBrowsers} />
-            <Details content={faqsHomeData} />
-            <Aside content={asideHomeData} />
+            <Tabs content={featuresData} images={illustrationsFeatures} />
+            <Cards content={donwloadsData} images={logosBrowsers} />
+            <Details content={faqsData} />
+            <Aside content={asideData} />
         </DefaultLayout>
     )
 }
