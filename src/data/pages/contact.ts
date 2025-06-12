@@ -1,4 +1,4 @@
-const allContactData = {
+const allData = {
     title: 'Contact',
     textIntro: 'Feel free to get in touch…',
     subtitle: 'Departments',
@@ -19,4 +19,4 @@ const allContactData = {
     },
 }
 
-export default allContactData
+export default allData

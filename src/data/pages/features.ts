@@ -1,6 +1,17 @@
-import type { CardsSectionProps } from '@/types/interfaces'
+import type {
+    AsideSectionProps,
+    CardsSectionProps,
+    HeroSectionProps,
+} from '@/types/interfaces'
 
-const keyConceptsFeaturesData: CardsSectionProps = {
+const asideData: AsideSectionProps = {
+    text1: 'Aliquam congue eget tortor vel lobortis. Sed ultrices enim mattis sapien sagittis, in finibus mi laoreet. ',
+    button: {
+        text: 'Sign in!',
+    },
+}
+
+const keyConceptsData: CardsSectionProps = {
     title: 'Concepts',
     textIntro:
         'In a mauris interdum, commodo erat ac, consectetur dolor. Duis tempor urna quis tellus sodales tempus. Suspendisse suscipit nisl eu justo pretium fringilla.',
@@ -38,4 +49,27 @@ const keyConceptsFeaturesData: CardsSectionProps = {
     ],
 }
 
-export default keyConceptsFeaturesData
+const heroData: HeroSectionProps = {
+    title: 'Features',
+    textIntro:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus arcu, commodo sit amet mollis quis, euismod nec metus. Praesent sed scelerisque tellus. Integer auctor suscipit purus.',
+    altimage: 'A beautiful illustration backend app',
+}
+
+const newsData = {
+    title: "What's new",
+    news: [
+        {
+            id: 0,
+            summary: 'Donec condimentum diam id ante placerat',
+            text: 'Sed bibendum sodales purus id sagittis. Sed tincidunt eros a neque volutpat, id tincidunt arcu hendrerit. Donec condimentum diam id ante placerat, a molestie ex luctus. ',
+        },
+        {
+            id: 1,
+            summary: 'Condimentum a neque volutpat',
+            text: 'Sed bibendum sodales purus id sagittis. Sed tincidunt eros a neque volutpat, id tincidunt arcu hendrerit. Donec condimentum diam id ante placerat, a molestie ex luctus. ',
+        },
+    ],
+}
+
+export { asideData, heroData, keyConceptsData, newsData }

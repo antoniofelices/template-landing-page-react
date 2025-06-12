@@ -1,7 +1,7 @@
 import Logo from '@/components/base/Logo'
 import MenuItems from '@/components/base/Menutems'
 import Button from '@/components/base/Button'
-import mainMenuData from '@data/mainMenuData'
+import mainMenuData from '@data/routes'
 import { Link } from 'react-router'
 import SocialMenu from '@/components/patterns/SocialMenu'
 

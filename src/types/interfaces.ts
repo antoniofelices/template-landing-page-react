@@ -46,10 +46,12 @@ export type HeroSectionProps = {
     textButton1?: string
     textButton2?: string
 }
-export type MainMenuData = {
+export type Routes = {
     id: number
     text: string
     url: string
+    isInMenu: boolean
+    orderMenu?: number
 }
 export type TabProps = {
     id: number

@@ -1,11 +1,11 @@
-import type { MainMenuData } from '@/types/interfaces'
+import type { Routes } from '@/types/interfaces'
 import { NavLink } from 'react-router'
 
 const MenuItems = ({
     content,
     variant,
 }: {
-    content: MainMenuData[]
+    content: Routes[]
     variant?: string
 }) => {
     const classesListElement =
@@ -17,9 +17,13 @@ const MenuItems = ({
             ? 'text-gray-300 hover:text-red'
             : 'text-white hover:text-red lg:text-blue-900'
 
+    const menuData = content
+        .filter((single) => single.isInMenu === true)
+        .toSorted((a, b) => (a.orderMenu ?? 0) - (b.orderMenu ?? 0))
+
     return (
         <>
-            {content.map((item) => (
+            {menuData.map((item) => (
                 <li key={item.id} className={classesListElement}>
                     <NavLink
                         to={`/${item.url}`}

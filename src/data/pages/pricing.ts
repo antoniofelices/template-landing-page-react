@@ -1,6 +1,27 @@
-import type { CardsSectionProps } from '@/types/interfaces'
+import type {
+    AsideSectionProps,
+    CardsSectionProps,
+    HeroSectionProps,
+} from '@/types/interfaces'
 
-const listPricingData: CardsSectionProps = {
+const asideData: AsideSectionProps = {
+    text1: '35.000+ Already Joined',
+    text2: "Stay up-to-date with what we're doing",
+    form: {
+        textLabel: 'Sign to our newsletter',
+        textError: "Whoops, make sure it's an email",
+        textButton: 'Contact Us',
+    },
+}
+
+const heroData: HeroSectionProps = {
+    title: 'Pricing',
+    textIntro:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus arcu, commodo sit amet mollis quis, euismod nec metus. Praesent sed scelerisque tellus. Integer auctor suscipit purus.',
+    altimage: 'A beautiful illustration backend app',
+}
+
+const listData: CardsSectionProps = {
     title: 'List of prices',
     textIntro:
         'In a mauris interdum, commodo erat ac, consectetur dolor. Duis tempor urna quis tellus sodales tempus.',
@@ -26,4 +47,4 @@ const listPricingData: CardsSectionProps = {
     ],
 }
 
-export default listPricingData
+export { asideData, heroData, listData }
