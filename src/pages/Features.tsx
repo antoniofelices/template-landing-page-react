@@ -5,13 +5,17 @@ import Cards from '@components/sections/Cards'
 import Container from '@components/base/Container'
 import Detail from '@components/base/Detail'
 import TitleParagraph from '@components/patterns/TitleParagraph'
-import heroFeaturesData from '@data/features/hero'
-import asideFeaturesData from '@data/features/aside'
-import { title, detail01, detail02 } from '@/data/features/news'
-import keyConceptsFeaturesData from '@data/features/keyConcepts'
+import {
+    asideFeaturesData,
+    heroFeaturesData,
+    keyConceptsFeaturesData,
+    newsFeaturesData,
+} from '@data/pages/features'
+
 import illustrationHero from '@/assets/images/illustration-features-tab-2.svg'
 
 function Features() {
+    const news = newsFeaturesData.news
     return (
         <DefaultLayout>
             <Hero
@@ -21,9 +25,10 @@ function Features() {
             />
             <Cards content={keyConceptsFeaturesData} />
             <Container>
-                <TitleParagraph title={title} variant="h2" />
-                <Detail contentDetail={detail01} />
-                <Detail contentDetail={detail02} />
+                <TitleParagraph title={newsFeaturesData.title} variant="h2" />
+                {news.map((single) => (
+                    <Detail key={single.id} contentDetail={single} />
+                ))}
             </Container>
             <Aside content={asideFeaturesData} />
         </DefaultLayout>

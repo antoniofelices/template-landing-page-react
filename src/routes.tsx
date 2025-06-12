@@ -12,11 +12,11 @@ const AllRoutes = () => {
     return (
         <Routes>
             <Route index element={<Home />} />
-            <Route path={`/${contact}`} element={<Contact />} />
-            <Route path={`/${error}`} element={<Error404 />} />
-            <Route path={`/${features}`} element={<Features />} />
-            <Route path={`/${login}`} element={<Login />} />
-            <Route path={`/${pricing}`} element={<Pricing />} />
+            <Route path={`/${contact.url}`} element={<Contact />} />
+            <Route path={`/${error.url}`} element={<Error404 />} />
+            <Route path={`/${features.url}`} element={<Features />} />
+            <Route path={`/${login.url}`} element={<Login />} />
+            <Route path={`/${pricing.url}`} element={<Pricing />} />
         </Routes>
     )
 }

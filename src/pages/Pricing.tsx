@@ -2,9 +2,11 @@ import DefaultLayout from '@layouts/DefaultLayout'
 import Hero from '@components/sections/Hero'
 import Cards from '@components/sections/Cards'
 import Aside from '@/components/sections/Aside'
-import heroPricingData from '@data/pricing/hero'
-import listPricingData from '@data/pricing/list'
-import asidePricingData from '@data/pricing/aside'
+import {
+    heroPricingData,
+    listPricingData,
+    asidePricingData,
+} from '@data/pages/pricing'
 import illustrationFeaturesTab2 from '@/assets/images/illustration-features-tab-3.svg'
 
 const Pricing = () => {

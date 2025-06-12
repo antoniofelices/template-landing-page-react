@@ -2,7 +2,7 @@ import DefaultLayout from '@layouts/DefaultLayout'
 import Container from '@components/base/Container'
 import Card from '@components/patterns/Card'
 import TitleParagraph from '@components/patterns/TitleParagraph'
-import allContactData from '@/data/contact/all'
+import allContactData from '@/data/pages/contact'
 import FormNewsletter from '@/components/patterns/FormNewsletter'
 
 function Contact() {

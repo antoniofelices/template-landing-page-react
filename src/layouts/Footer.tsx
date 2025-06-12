@@ -1,7 +1,7 @@
 import Logo from '@/components/base/Logo'
 import MenuItems from '@/components/base/Menutems'
 import SocialMenu from '@/components/patterns/SocialMenu'
-import mainMenuData from '@data/mainMenuData'
+import mainMenuData from '@data/routes'
 import { Link } from 'react-router'
 
 const Footer = () => {
