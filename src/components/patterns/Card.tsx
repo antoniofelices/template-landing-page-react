@@ -24,7 +24,7 @@ const Card = ({
             <p className="text-sm">{content.text}</p>
             {content.buttonText && (
                 <Button
-                    buttonType="button"
+                    type="button"
                     text={content.buttonText}
                     classes="text-xs"
                 />

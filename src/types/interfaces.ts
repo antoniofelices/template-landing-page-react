@@ -1,15 +1,15 @@
+import type { ButtonHTMLAttributes } from 'react'
 export type AsideSectionProps = {
     text1: string
     text2?: string
     form?: FormSuscribeProps
     button?: ButtonProps
 }
-export type ButtonProps = {
-    buttonType?: 'button' | 'submit' | 'reset'
-    classes?: string
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     text: string
+    classes?: string
     url?: string
-    variant?: string
+    variant?: 'blue' | 'red' | 'transparent'
 }
 export type CardProps = {
     id: number
@@ -46,6 +46,14 @@ export type HeroSectionProps = {
     textButton1?: string
     textButton2?: string
 }
+export type PostProps = {
+    id: number
+    date: string
+    excerpt: { rendered: string }
+    title: { rendered: string }
+    content: { rendered: string }
+}
+
 export type Routes = {
     id: number
     text: string
