@@ -53,6 +53,18 @@ export type PostProps = {
     link: string
     title: { rendered: string }
     content: { rendered: string }
+    _embedded?: {
+        'wp:featuredmedia': {
+            id: number
+            media_details: {
+                sizes: {
+                    medium: {
+                        source_url: string
+                    }
+                }
+            }
+        }[]
+    }
 }
 
 export type RoutesProps = {
