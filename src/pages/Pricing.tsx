@@ -2,7 +2,7 @@ import DefaultLayout from '@layouts/DefaultLayout'
 import Hero from '@components/sections/Hero'
 import Cards from '@components/sections/Cards'
 import Aside from '@/components/sections/Aside'
-import { heroData, listData, asideData } from '@data/pages/pricing'
+import { heroData, listData, asideData } from '@/data/pagesData/pricing'
 import illustrationFeaturesTab2 from '@/assets/images/illustration-features-tab-3.svg'
 
 const Pricing = () => {

@@ -6,10 +6,10 @@ import Error404 from '@pages/Error'
 import Features from '@pages/Features'
 import Login from '@pages/Login'
 import Pricing from '@pages/Pricing'
-import routes from '@data/routes'
+import routesData from '@/data/routesData'
 
 const AllRoutes = () => {
-    const [blog, contact, error, features, login, pricing] = routes
+    const [blog, contact, error, features, login, pricing] = routesData
     return (
         <Routes>
             <Route index element={<Home />} />

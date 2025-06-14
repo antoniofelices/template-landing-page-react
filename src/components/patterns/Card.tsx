@@ -9,7 +9,7 @@ const Card = ({
     images?: string[]
 }) => {
     return (
-        <div className="mx-8 flex flex-col items-center gap-3 rounded-lg bg-white p-10 shadow-lg shadow-gray-300/100 lg:mx-0">
+        <div className="mx-8 flex flex-col items-center justify-between gap-3 rounded-lg bg-white p-10 shadow-lg shadow-gray-300/100 lg:mx-0">
             {images && (
                 <img
                     src={images[content.id]}

@@ -50,11 +50,12 @@ export type PostProps = {
     id: number
     date: string
     excerpt: { rendered: string }
+    link: string
     title: { rendered: string }
     content: { rendered: string }
 }
 
-export type Routes = {
+export type RoutesProps = {
     id: number
     text: string
     url: string
