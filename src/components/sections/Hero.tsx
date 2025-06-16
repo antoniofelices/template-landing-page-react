@@ -33,14 +33,14 @@ const Hero = ({
                     <div className="flex justify-center gap-2 lg:justify-start">
                         {content.textButton1 && (
                             <Button
-                                buttonType="button"
+                                type="button"
                                 classes={`lg:px-6`}
                                 text={content.textButton1}
                             />
                         )}
                         {content.textButton2 && (
                             <Button
-                                buttonType="button"
+                                type="button"
                                 classes={`lg:px-6`}
                                 text={content.textButton2}
                                 variant="transparent"

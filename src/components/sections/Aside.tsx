@@ -14,7 +14,11 @@ const Aside = ({ content }: { content: AsideSectionProps }) => {
                 </p>
                 {content.form && <FormNewsletter content={content.form} />}
                 {content.button && (
-                    <Button text={content.button.text} variant="red" />
+                    <Button
+                        text={content.button.text}
+                        variant="red"
+                        type="button"
+                    />
                 )}
             </div>
         </aside>

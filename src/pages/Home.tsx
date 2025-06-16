@@ -11,7 +11,7 @@ import {
     donwloadsData,
     faqsData,
     asideData,
-} from '@/data/pages/home'
+} from '@/data/pagesData/home'
 
 import illustrationHero from '@/assets/images/illustration-hero.svg'
 import illustrationFeaturesTab1 from '@/assets/images/illustration-features-tab-1.svg'

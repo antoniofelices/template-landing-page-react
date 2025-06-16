@@ -26,7 +26,7 @@ const Tab = ({
                         <Button
                             classes={`hidden md:inline-block`}
                             text={contentTab.buttonText}
-                            variant="blue"
+                            type="button"
                         />
                     )}
                 </div>

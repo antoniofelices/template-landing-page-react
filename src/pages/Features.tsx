@@ -10,7 +10,7 @@ import {
     heroData,
     keyConceptsData,
     newsData,
-} from '@data/pages/features'
+} from '@/data/pagesData/features'
 
 import illustrationHero from '@/assets/images/illustration-features-tab-2.svg'
 

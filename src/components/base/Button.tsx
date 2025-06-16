@@ -6,7 +6,7 @@ const Button = ({
     text,
     url,
     variant,
-    buttonType = 'button',
+    type = 'button',
 }: ButtonProps) => {
     const individualClasses = classes ? classes : ''
     let variantOption =
@@ -26,7 +26,7 @@ const Button = ({
         <>
             <button
                 className={`rounded-lg border-2 px-3 py-2 font-bold text-sm ${variantOption} ${individualClasses}`}
-                type={buttonType}
+                type={type}
             >
                 {url ? <Link to={url}>{text}</Link> : <>{text}</>}
             </button>

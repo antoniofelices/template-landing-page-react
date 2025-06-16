@@ -1,34 +1,41 @@
-import type { Routes } from '@/types/interfaces'
+import type { RoutesProps } from '@/types/interfaces'
 
-const routes: Routes[] = [
+const routesData: RoutesProps[] = [
     {
         id: 1,
-        url: 'contact',
-        text: 'Contact',
+        url: 'blog',
+        text: 'Blog',
         isInMenu: true,
         orderMenu: 3,
     },
     {
         id: 2,
-        url: 'error',
+        url: 'contact',
+        text: 'Contact',
+        isInMenu: true,
+        orderMenu: 4,
+    },
+    {
+        id: 3,
+        url: '*',
         text: 'Error',
         isInMenu: false,
     },
     {
-        id: 3,
+        id: 4,
         url: 'features',
         text: 'Features',
         isInMenu: true,
         orderMenu: 1,
     },
     {
-        id: 4,
+        id: 5,
         url: 'login',
         text: 'Login',
         isInMenu: false,
     },
     {
-        id: 5,
+        id: 6,
         url: 'pricing',
         text: 'Pricing',
         isInMenu: true,
@@ -36,4 +43,4 @@ const routes: Routes[] = [
     },
 ]
 
-export default routes
+export default routesData
